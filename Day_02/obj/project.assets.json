@@ -1,46 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "Day_01/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Day_01.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Day_01.dll": {}
-        }
-      },
-      "Day_02/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Day_02.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Day_02.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "Day_01/1.0.0": {
-      "type": "project",
-      "path": "../Day_01/Day_01.csproj",
-      "msbuildProject": "../Day_01/Day_01.csproj"
-    },
-    "Day_02/1.0.0": {
-      "type": "project",
-      "path": "../Day_02/Day_02.csproj",
-      "msbuildProject": "../Day_02/Day_02.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Day_01 >= 1.0.0",
-      "Day_02 >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\Wolve\\.nuget\\packages\\": {},
@@ -50,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\AoC\\2023\\AoC2023\\AoC2023\\AoC2023.csproj",
-      "projectName": "AoC2023",
-      "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\AoC2023\\AoC2023.csproj",
+      "projectUniqueName": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj",
+      "projectName": "Day_02",
+      "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj",
       "packagesPath": "C:\\Users\\Wolve\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\AoC\\2023\\AoC2023\\AoC2023\\obj\\",
+      "outputPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\SDK\\DevExpress\\Components\\Offline Packages",
@@ -77,14 +42,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Projects\\AoC\\2023\\AoC2023\\Day_01\\Day_01.csproj": {
-              "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_01\\Day_01.csproj"
-            },
-            "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj": {
-              "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
