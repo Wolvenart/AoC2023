@@ -21,22 +21,12 @@
             List<int> lstVals = new List<int>();
             foreach (var line in input.Split("\r\n"))
             {
-                var valTemp = 0;
+                if (String.IsNullOrWhiteSpace(line)) continue;
+                var valTemp = String.Empty;
 
-                for (int i = 0; i < line.Length; i++)
-                    if (Int32.TryParse(Convert.ToString(line[i]), out var val))
-                    {
-                        valTemp = val * 10;
-                        break;
-                    }
-                for (int i = line.Length - 1; i >= 0; i--)
-                    if (Int32.TryParse(Convert.ToString(line[i]), out var val))
-                    {
-                        valTemp += val;
-                        break;
-                    }
-
-                lstVals.Add(valTemp);
+                valTemp += line.FirstOrDefault(x => Char.IsDigit(x));
+                valTemp += line.LastOrDefault(x => Char.IsDigit(x));
+                lstVals.Add(Convert.ToInt32(valTemp));
             }
             return lstVals.Sum();
         }
