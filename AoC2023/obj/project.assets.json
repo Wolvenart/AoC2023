@@ -1,10 +1,20 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
+      "AoCHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AoCHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AoCHelper.dll": {}
+        }
+      },
       "Day_01/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/Day_01.dll": {}
         },
@@ -14,17 +24,48 @@
       },
       "Day_02/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/Day_02.dll": {}
         },
         "runtime": {
           "bin/placeholder/Day_02.dll": {}
         }
+      },
+      "Day_03/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AoCHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Day_03.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Day_03.dll": {}
+        }
+      },
+      "Day_04/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AoCHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Day_04.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Day_04.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AoCHelper/1.0.0": {
+      "type": "project",
+      "path": "../AoCHelper/AoCHelper.csproj",
+      "msbuildProject": "../AoCHelper/AoCHelper.csproj"
+    },
     "Day_01/1.0.0": {
       "type": "project",
       "path": "../Day_01/Day_01.csproj",
@@ -34,12 +75,24 @@
       "type": "project",
       "path": "../Day_02/Day_02.csproj",
       "msbuildProject": "../Day_02/Day_02.csproj"
+    },
+    "Day_03/1.0.0": {
+      "type": "project",
+      "path": "../Day_03/Day_03.csproj",
+      "msbuildProject": "../Day_03/Day_03.csproj"
+    },
+    "Day_04/1.0.0": {
+      "type": "project",
+      "path": "../Day_04/Day_04.csproj",
+      "msbuildProject": "../Day_04/Day_04.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net8.0": [
       "Day_01 >= 1.0.0",
-      "Day_02 >= 1.0.0"
+      "Day_02 >= 1.0.0",
+      "Day_03 >= 1.0.0",
+      "Day_04 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -67,7 +120,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -75,14 +128,20 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
             "D:\\Projects\\AoC\\2023\\AoC2023\\Day_01\\Day_01.csproj": {
               "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_01\\Day_01.csproj"
             },
             "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj": {
               "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_02\\Day_02.csproj"
+            },
+            "D:\\Projects\\AoC\\2023\\AoC2023\\Day_03\\Day_03.csproj": {
+              "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_03\\Day_03.csproj"
+            },
+            "D:\\Projects\\AoC\\2023\\AoC2023\\Day_04\\Day_04.csproj": {
+              "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_04\\Day_04.csproj"
             }
           }
         }
@@ -94,8 +153,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -112,7 +171,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
