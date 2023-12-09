@@ -57,6 +57,19 @@
         "runtime": {
           "bin/placeholder/Day_04.dll": {}
         }
+      },
+      "Day_05/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AoCHelper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Day_05.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Day_05.dll": {}
+        }
       }
     }
   },
@@ -85,6 +98,11 @@
       "type": "project",
       "path": "../Day_04/Day_04.csproj",
       "msbuildProject": "../Day_04/Day_04.csproj"
+    },
+    "Day_05/1.0.0": {
+      "type": "project",
+      "path": "../Day_05/Day_05.csproj",
+      "msbuildProject": "../Day_05/Day_05.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -92,7 +110,8 @@
       "Day_01 >= 1.0.0",
       "Day_02 >= 1.0.0",
       "Day_03 >= 1.0.0",
-      "Day_04 >= 1.0.0"
+      "Day_04 >= 1.0.0",
+      "Day_05 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -142,6 +161,9 @@
             },
             "D:\\Projects\\AoC\\2023\\AoC2023\\Day_04\\Day_04.csproj": {
               "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_04\\Day_04.csproj"
+            },
+            "D:\\Projects\\AoC\\2023\\AoC2023\\Day_05\\Day_05.csproj": {
+              "projectPath": "D:\\Projects\\AoC\\2023\\AoC2023\\Day_05\\Day_05.csproj"
             }
           }
         }
