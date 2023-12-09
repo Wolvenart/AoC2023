@@ -14,3 +14,6 @@
 
 //Console.WriteLine(Day_05.Main.Part1(false));
 //Console.WriteLine(Day_05.Main.Part2(false));
+
+//Console.WriteLine(Day_06.Main.Part1(false));
+Console.WriteLine(Day_06.Main.Part2(false));
